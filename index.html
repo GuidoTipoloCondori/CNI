@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- NOTA
+    TOTAL TIEMPO DE COMIDA DE CADA COMIDA 
+    AL FINAL LA TABLA DE MOLECULA CALORICA CON SU PESO
+    SOLO LA PRIMERA OPCION PARA EL EXCEL ANALISIS
+    TODAS LAS OPCIONES PARA EL MENU MENSUAL (PLANIFICACION) 
+    ordenar la tabla en tiempo de comida-->
+<head>
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>cni_v1</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- fevicon -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">  
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+  <!-- loader  -->
+  <div class="loader_bg">
+    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+  </div>
+  <!-- end loader -->
+  <!-- header -->
+  <header>
+    <!-- header inner -->
+    <div class="header-top">
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
+         
+               <div class="menu-area">
+                <div class="limit-box">
+                  <nav class="main-menu ">
+                    <ul class="menu-area-main">
+                      <li class="active"> <a href="index.html">Home</a> </li>
+                      <!-- <li> <a href="#about">Formulario</a> </li> -->
+                      <li> <a href="#form-comida">Formulario</a> </li>
+                      <li> <a href="#vegetable">Dieta Hiperproteica</a> </li>
+                      <li> <a href="#testimonial">Analisis Quimico</a> </li>
+                      <li> <a href="#contact">Contacto</a> </li>
+                     
+                     <li> <a href="#"><img src="icon/icon_b.png" alt="#" /></a></li>
+                     </ul>
+                   </nav>
+                 </div>
+               </div> 
+              </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- end header inner -->
+
+     <!-- end header -->
+     <section class="slider_section">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <div class="container-fluid padding_dd">
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="text-bg">
+                     <span>Bienvenido</span>
+                      <h1>Vive Saludable Hoy</h1>
+                      <p>La salud no es un destino, sino un camino que se recorre paso a paso. Cada alimento que eliges puede acercarte a la vida que deseas: más activa, más fuerte y más equilibrada.</p>
+                      <!-- <form class="Vegetable">
+                <input class="Vegetable_fom" placeholder="Vegetable" type="text" name=" Vegetable">
+                <button class="Search_btn">Search</button>
+              </form>
+                      <a href="#">Contact Us</a> <a href="#">Vegetable</a> -->
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="images_box">
+                      <figure><img src="images/img2.png"></figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+
+            <div class="container-fluid padding_dd">
+              <div class="carousel-caption">
+
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="text-bg">
+                      <span>Bienvenido</span>
+                      <h1>Comer con Propósito</h1>
+                      <p>La nutrición es una herramienta poderosa para transformar tu mente y tu cuerpo. Cuando entiendes lo que comes y por qué lo haces, cada bocado se vuelve una oportunidad de crecimiento. </p>
+                      <!-- <form class="Vegetable">
+                <input class="Vegetable_fom" placeholder="Vegetable" type="text" name=" Vegetable">
+                <button class="Search_btn">Search</button>
+              </form>
+                      <a href="#">Contact Us</a> <a href="#">Vegetable</a> -->
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="images_box">
+                      <figure><img src="images/img2.png"></figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="carousel-item">
+
+            <div class="container-fluid padding_dd">
+              <div class="carousel-caption ">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="text-bg">
+                      <span>Bienvenido</span>
+                      <h1>Nutriendo Tu Vida</h1>
+                      <p>Cuidar tu cuerpo comienza con pequeñas decisiones diarias. Cuando eliges alimentarte de forma consciente, estás construyendo un bienestar real, sostenible y lleno de energía para vivir plenamente. </p>
+                       <!-- <form class="Vegetable">
+                <input class="Vegetable_fom" placeholder="Vegetable" type="text" name=" Vegetable">
+                <button class="Search_btn">Search</button>
+              </form>
+                      <a href="#">Contact Us</a> <a href="#">Vegetable</a> -->
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="images_box">
+                      <figure><img src="images/img2.png"></figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</section>
+</div>
+</header>
+
+
+
+<!-- about  -->
+<!-- <div id="about" class="about">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="about-box">
+          <h2>Formulario</h2>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages andIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many</p>
+          <a href="Javascript:void(0)">Enviar caso</a>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 padding_rl">
+        <div class="about-box_img">
+          <figure><img src="images/about.jpg" alt="#" /></figure>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+<!-- end abouts -->
+
+<!-- formulario.html  -->
+<div id="form-comida" class="about">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="about-box">
+
+          <h2 id="titulo-etapa">Desayuno</h2>
+
+          <!-- Inputs -->
+          <div style="margin-bottom: 15px;">
+
+            <!-- COMIDA -->
+            <label for="input-comida">Comida:</label>
+            <input type="text" id="input-comida" class="form-control" />
+
+            <!-- DETALLE -->
+            <label for="input-detalle" style="margin-top:10px;">Detalle:</label>
+            <input type="text" id="input-detalle" class="form-control" />
+
+            <!-- INGREDIENTE -->
+            <label for="input-ingrediente" style="margin-top:10px;">Ingrediente:</label>
+            <input type="text" id="input-ingrediente" class="form-control" autocomplete="off"/>
+
+            <!-- SUGERENCIAS DE AUTOCOMPLETE -->
+            <div id="lista-sugerencias" class="list-group" style="position:absolute; z-index:999;"></div>
+
+
+            <!-- CANTIDAD -->
+            <label for="input-cantidad" style="margin-top:10px;">Cantidad:</label>
+            <input type="text" id="input-cantidad" class="form-control" />
+
+            <button id="btn-agregar" type="button" class="btn btn-primary" style="margin-top:10px;">
+              Agregar
+            </button>
+          </div>
+
+          <!-- Tabla -->
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Comida</th>
+                <th>Ingrediente</th>
+                <th>Cantidad</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-ingredientes"></tbody>
+          </table>
+
+          <!-- Botones navegación -->
+          <div style="display:flex; justify-content:space-between; margin-top:20px;">
+            <button id="btn-anterior" type="button" class="btn btn-secondary">Anterior</button>
+            <button id="btn-siguiente" type="button" class="btn btn-secondary">Siguiente</button>
+          </div>
+
+          <!-- Botón enviar -->
+          <a id="btn-guardar" role="button" href="javascript:void(0)" class="btn btn-success" style="margin-top:20px; display:inline-block;">
+            Guardar todo
+          </a>
+
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 padding_rl">
+        <div class="about-box_img">
+          <figure><img src="images/about.jpg" alt="#"></figure>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- vegetable -->
+ <div id="vegetable" class="vegetable">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div  class="titlepage">
+          <h2> Dieta <strong class="llow"> HIPERPROTEICA </strong> </h2>
+        </div>
+      </div>
+    </div>
+<!-- TABLA TIEMPO COMIDA -->
+<div class="row mt-5">
+  <div class="col-12">
+    <h3>Tiempo de Comida</h3>
+    <div style="overflow-x:auto;">
+      <table id="tabla-tiempo-comida" class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Etapa</th>
+            <th>Comida</th>
+            <th>Calorías</th>
+            <th>Humedad</th>
+            <th>Proteínas</th>
+            <th>Grasas</th>
+            <th>Carbohid.</th>
+            <th>Fibra</th>
+            <th>Calcio</th>
+            <th>Fósforo</th>
+            <th>Hierro</th>
+            <th>Sodio</th>
+            <th>Potasio</th>
+            <th>Zinc</th>
+            <th>Vit. A</th>
+            <th>Vit. B1</th>
+            <th>Vit. B2</th>
+            <th>Niacina</th>
+            <th>Vit. C</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Los datos se rellenarán dinámicamente desde JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- TABLA SUMA GENERAL -->
+<div class="row mt-5">
+  <div class="col-12">
+    <h3 id="titulo-suma-general">Resultado General</h3>
+    <div style="overflow-x:auto;">
+      <table id="tabla-suma-general" class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Calorías Kcal.</th>
+            <th>Humedad Hum(%)</th>
+            <th>Proteínas Prot(g)</th>
+            <th>Grasas Lip(g)</th>
+            <th>Carbohid. Glu(g)</th>
+            <th>Fibra Fib(mg)</th>
+            <th>Calcio Ca(mg)</th>
+            <th>Fósforo P(mg)</th>
+            <th>Hierro Fe(mg)</th>
+            <th>Sodio Na(mg)</th>
+            <th>Potasio k(mg)</th>
+            <th>Zinc Zn(mg)</th>
+            <th>Vit. A(mcg)</th>
+            <th>Vit. B1(mg)</th>
+            <th>Vit. B2(mg)</th>
+            <th>Niacina PP(mg)</th>
+            <th>Vit. C(mg)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Se llena con JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div> 
+<!-- end vegetable -->
+
+
+
+
+
+
+
+
+   <!-- clients -->
+    <!-- <div id="testimonial" class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>analisis quimico</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clients_red">
+        <div class="container">
+            <div id="testimonial_slider" class="carousel slide" data-ride="carousel">
+
+
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="testomonial_section">
+
+                            <div class="full testimonial_cont">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 pa_right">
+                                        <div class="testomonial_img">
+                                            <figure><img src="images/tes.jpg" alt="#"/></figure>
+                                            <i><img src="images/test_con.png" alt="#"/></i>
+                                        </div>
+                                    </div>
+   
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+  
+    <!-- end clients -->
+
+
+<!-- SECTION: ANALISIS QUIMICO -->
+<div class="clients" id="testimonial">
+  <div class="container">
+      <div class="row mb-4">
+          <div class="col-md-12">
+              <div class="titlepage">
+                  <h2>Análisis <strong class="llow"> QUIMICO </strong> </h2>
+              </div>
+          </div>
+      </div>
+
+      <!-- PESO + BOTON -->
+      <div class="row mb-4">
+          <div class="col-md-3">
+              <label><b>Nombre:</b></label>
+              <input id="input-nombre" type="text" class="form-control" placeholder="Nombre del pasiente">
+              <label><b>Peso (kg):</b></label>
+              <input id="input-peso" type="number" class="form-control" placeholder="Ingrese el peso">
+          </div>
+          <div class="col-md-3 d-flex align-items-end">
+                <button onclick="calcularInterpretacionResultados()" class="btn btn-primary w-100">
+                  Calcular
+                </button>
+          </div>
+      </div>
+
+      <!-- TABLAS LADO A LADO -->
+      <div class="row">
+
+          <!-- CUADRO 1 -->
+          <div class="col-md-6">
+              <h4 class="mb-2 text-center">MOLECULA CALORICA</h4>
+              <div class="table-responsive">
+                  <table id="tabla-cuadro-1" class="table table-bordered table-striped">
+                      <thead>
+                          <tr>
+                              <th>Nutrientes</th>
+                              <th> % </th>
+                              <th> Kcal </th>
+                              <th> g </th>
+                              <th> g/Kg </th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+
+          <!-- CUADRO 2 -->
+          <div class="col-md-6">
+              <h4 class="mb-2 text-center">Interpretacion de Resultados</h4>
+              <div class="table-responsive">
+                  <table id="tabla-cuadro-2" class="table table-bordered table-striped">
+                      <thead>
+                          <tr>
+                              <th>NUTRIENTE</th>
+                              <th>Calorías</th>
+                              <th>Carbohidratos</th>
+                              <th>Proteínas</th>
+                              <th>Grasas</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>0</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div> <!-- row -->
+      <style>
+        /* From Uiverse.io by andrew-demchenk0 */
+        .button {
+          position: relative;
+          width: 150px;
+          height: 40px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          border: 1px solid #17795E;
+          background-color: #209978;
+          overflow: hidden;
+        }
+    
+        .button, .button__icon, .button__text {
+          transition: all 0.3s;
+        }
+    
+        .button .button__text {
+          transform: translateX(22px);
+          color: #fff;
+          font-weight: 600;
+        }
+    
+        .button .button__icon {
+          position: absolute;
+          transform: translateX(109px);
+          height: 100%;
+          width: 39px;
+          background-color: #17795E;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        .button .svg {
+          width: 20px;
+          fill: #fff;
+        }
+    
+        .button:hover {
+          background: #17795E;
+        }
+    
+        .button:hover .button__text {
+          color: transparent;
+        }
+    
+        .button:hover .button__icon {
+          width: 148px;
+          transform: translateX(0);
+        }
+    
+        .button:active .button__icon {
+          background-color: #1e9172;
+        }
+    
+        .button:active {
+          border: 1px solid #146c54;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- Botón de descarga -->
+      <a id="btn-descargar-excel" class="button">
+        <span class="button__text">Descargar</span>
+        <span class="button__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" class="svg">
+            <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+            <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+            <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+          </svg>
+        </span>
+      </a>
+      
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- contact -->
+<div id="contact" class="contact">
+  <div class="container">
+   <div class="row">
+     <div class="col-md-12">
+                <div class="titlepage">
+                  <h2>Contacto <strong class="llow"> Ubicacion</strong></h2>
+                </div>
+   </div>
+
+</div>
+    <div class="white_color">
+      <div class="row">
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+           <form class="contact_bg">
+            <div class="row">
+              <div class="col-md-12">
+              
+                <div class="col-md-12">
+                  <input class="contactus" placeholder="Cual es tu nombre?" type="text" name="Your Name">
+                </div>
+                <div class="col-md-12">
+                  <input class="contactus" placeholder="Correo electronico" type="text" name="Email">
+                </div>
+                <div class="col-md-12">
+                  <input class="contactus" placeholder="Numero de Celular" type="text" name="Phone Number">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="textarea" placeholder="Dejanos tu mensaje" type="text" name="Message"></textarea>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <button class="send" href="#">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+            </div>
+      
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+        
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.538284830321!2d-68.1237726!3d-16.4989007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f21340d56b77f%3A0xfc177abd7aca53e0!2sCNI%20-%20Centro%20Nutricional%20Integrativo!5e0!3m2!1ses!2sbo!4v1764224463354!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+           </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+</div>
+    <!-- end contact -->
+
+    <!--  footer -->
+    <footer>
+      <div class="footer ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+             <a href="#" class="logo_footer"> <img src="images/logo2.png" alt="#"/></a>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
+                  <div class="address">
+                    <h3>Direccion </h3>
+                    <ul class="loca">
+                      <li>
+                        <a href="#"></a>visitanos 
+                        <br>Nos encontrameos en .....  </li>
+                        <li>
+                          <a href="#"></a>(+71 .......) </li>
+                          <li>
+                            <a href="#"></a>......@gmail.com</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="address">
+                          <h3>Redes Sociales</h3>
+                          <ul class="Menu_footer">
+                            <li class="active"> <a href="#">Twitter</a> </li>
+                            <li><a href="#">Facebook</a> </li>
+                            <li><a href="#">Instagram</a> </li>
+                            <li><a href="#">Linkdin</a> </li>
+                          </ul>
+                        </div>
+                      </div>
+                     
+
+                      <div class="col-lg-4 col-md-6 col-sm-6 ">
+                        <div class="address">
+                          <h3>Hoja Informativa</h3>
+                           <form class="news">
+                           <input class="newslatter" placeholder="Ingresa tu correo electronico" type="text" name=" Enter your email">
+                            <button class="submit">Suscribir</button>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="copyright">
+                <div class="container">
+                  <p>Copyright ©  Design by <a href="#">dirrecion </a></p>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- end footer -->
+          <!-- Javascript files-->
+          <!-- IMPORTAR EL JS -->
+          <!-- Librería XLSX -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js"></script>
+          <script src="js/formulario.js" defer></script>
+          <script src="js/jquery.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.bundle.min.js"></script>
+          <script src="js/jquery-3.0.0.min.js"></script>
+          <script src="js/plugin.js"></script>
+          <!-- sidebar -->
+          <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+          <script src="js/custom.js"></script>
+          <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+          <script>
+// This example adds a marker to indicate the position of Bondi Beach in Sydney,
+// Australia.
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 11,
+    center: {
+      lat: 40.645037,
+      lng: -73.880224
+    },
+  });
+
+  var image = 'images/maps-and-flags.png';
+  var beachMarker = new google.maps.Marker({
+    position: {
+      lat: 40.645037,
+      lng: -73.880224
+    },
+    map: map,
+    icon: image
+  });
+}
+</script>
+<!-- google map js -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+<!-- end google map js -->
+
+
+
+
+</body>
+
+</html>
