@@ -862,10 +862,32 @@ tablaOrdenadaCalculo.forEach(item => {
       link.click();
 
       console.log("Descarga iniciada:", nombreArchivo);
+      alert("Descarga iniciada:", nombreArchivo);      
 
     } catch (err) {
       console.error("Error al generar Excel:", err);
       alert("Ocurrió un error al descargar Excel. Revisa la consola.");
     }
+  });
+});
+
+
+
+///------------------------------------------
+// notificaion de descarga
+//-----------------------------------
+
+document.addEventListener("DOMContentLoaded", () => {
+  const boton = document.getElementById("btn-descargar-excel");
+  const notificacion = document.getElementById("notificacion-descarga");
+
+  boton.addEventListener("click", () => {
+    // Mostrar la notificación
+    notificacion.style.display = "block";
+
+    // Ocultarla después de 2.5 segundos
+    setTimeout(() => {
+      notificacion.style.display = "none";
+    }, 2500);
   });
 });
